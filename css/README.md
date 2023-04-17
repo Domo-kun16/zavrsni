@@ -1,2 +1,0 @@
-# zavrsni
-zavrsni rad
