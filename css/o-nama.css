@@ -101,10 +101,12 @@ table {
     color: #E78225;
 }
 
-
+p{
+	line-height: 20px;
+}
 .main-content .content .vuk{
     width: 40%;
-    height: 400px;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -114,11 +116,11 @@ table {
     text-align: center;
 }
 
-.tekst-right{
+.tekst-right1{
     text-align: right;
 }
 
-.tekst-right a{
+.tekst-right1 a{
     color: #E78225;
     text-decoration: none;
 }
@@ -134,7 +136,7 @@ table {
 
 .main-content .content .plivac{
     width: 100%;
-    height: 550px;
+    height: auto;
 }
 
 
@@ -186,11 +188,9 @@ table {
 .rights{
 	max-width: 1100px;
     margin: 0 auto;
+	display: flex;
 }
 
-.politika{
-	margin-left: 100px;
-}
 
 .rights a{
 	text-decoration: none;
@@ -413,4 +413,37 @@ li > a:only-child:after { content: ''; }
 
 	}
 
+}
+
+@media (max-width: 768px){
+	.main-content{
+		padding: 0 40px;
+	}
+	.footer-content{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer-content .facebook{
+		margin: 20px;
+	}
+
+	.footer-left{
+		flex-direction: column;
+	}
+
+	.rights{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.rights p{
+		margin: 10px;
+	}
+}
+
+@media (max-width: 991px){
+	.main-content{
+		padding: 0 40px;
+	}
 }
